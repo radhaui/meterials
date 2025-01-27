@@ -1,0 +1,29 @@
+//1. Definition
+//Library: A collection of pre-written code designed to perform specific tasks. You call library functions in your code when needed.
+//Framework: A predefined structure or skeleton for building applications. It provides the foundation and dictates the flow of control in your program.
+
+2. Inversion of Control
+Library: You are in control. You decide when and how to call the library functions. The flow of control remains in your hands.
+
+Example: Using a sorting function from the Lodash library in JavaScript.
+javascript
+Copy
+Edit
+const _ = require('lodash');
+const sorted = _.sortBy([3, 1, 4, 2]); // You call the library function
+Framework: The framework is in control. It provides a structure, and you fill in specific parts of the application. The framework decides when to call your code.
+
+Example: A web framework like Django in Python or React in JavaScript defines the flow, and you add components or routes within its structure.
+
+  3. Use Case
+Library: Best for specific, modular tasks like data manipulation, HTTP requests, or mathematical calculations.
+Examples: Lodash, NumPy, Requests, jQuery.
+Framework: Best for building complete applications. It provides everything from structure to tools, often including routing, templating, and more.
+Examples: Django, Spring, Angular, React.
+
+  4. Dependency
+Library: A library is just one part of your application, and it doesn’t dictate how other parts are built.
+Framework: A framework often acts as the backbone of your application, dictating how components interact and how the app is structured.
+5. Flexibility
+Library: Offers more flexibility since you integrate it only where needed and control the flow of your application.
+Framework: More rigid because you need to adhere to its rules and conventions to fully leverage its features.
